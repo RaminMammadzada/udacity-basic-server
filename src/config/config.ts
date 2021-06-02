@@ -1,13 +1,13 @@
 export const config = {
   "dev": {
-    "username": "remki",
-    "password": "remki1299",
-    "database": "udacityfs1",
-    "host": "database-2.cspdxhpfdw5f.eu-central-1.rds.amazonaws.com",
-    "dialect": "postgres",
-    "aws_region": "eu-central-1",
-    "aws_profile": "default",
-    "aws_media_bucket": "udacitycloud2",
+    "username": process.env.POSTGRESS_USERNAME,
+    "password": process.env.POSTGRESS_PASSWORD,
+    "database": process.env.POSTGRESS_DATABASE,
+    "host": process.env.POSTGRESS_HOST,
+    "dialect": process.env.DIALECT,
+    "aws_region": process.env.POSTGRESS_AWS_REGION,
+    "aws_profile": process.env.POSTGRESS_AWS_PROFILE,
+    "aws_media_bucket": process.env.POSTGRESS_AWS_MEDIA_BUCKET,
   },
   "prod": {
     "username": "",
