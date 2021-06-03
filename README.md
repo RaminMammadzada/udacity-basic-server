@@ -1,6 +1,13 @@
-# udacity-c2-basic-server
+# Udagram REST API
 
-This is a simple node-express server to explore and understand the Request-Response pattern.
+Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
+
+The project is split into three parts:
+1. [The Simple Frontend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-frontend)
+A basic Ionic client web application which consumes the RestAPI Backend. 
+2. [The RestAPI Backend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-restapi), a Node-Express server which can be deployed to a cloud service.
+3. [The Image Filtering Microservice](https://github.com/udacity/cloud-developer/tree/master/course-02/project/image-filter-starter-code), the final project for the course. It is a Node-Express application which runs a simple script to process images.
+
 
 ***
 ## Getting Setup
@@ -30,33 +37,3 @@ npm run dev
 
 Developer mode runs off the TypeScript source. Any saves will reset the server and run the latest version of the codebase. 
 
-***
-## Important Files and Project Structure
-
-The source code for this demo resides in the ./src directory.
-
-### src/server.ts
-The main code for this demo is located in the ./src/server.ts file. This includes 
-
-### src/cars.ts
-This is a javascript object containing a list of cars. This will be useful for providing data for our simple endpoints.
-
-### src/unit-test-examples/
-This directory contains some simple unit functions (`units.ts`) and corresponding tests using Mocha and Chai (`units.tests.ts`).
-
-***
-# Tasks
-1. @TODO `./src/server.ts/`
-Add an endpoint to GET a list of cars.
-
-2. @TODO `./src/server.ts/` 
-Add an endpoint to get a specific car.
-
-3. @TODO `./src/server.ts/` 
-Add an endpoint to post a new car to our list.
-
-4. @TODO `./src/unit-test-examples/units.ts`
-Try creating a method "concat" to concatenate two strings.
-
-5. @TODO `./src/unit-test-examples/units.tests.ts`
-Try creating a new describe block for the "concat" method.
